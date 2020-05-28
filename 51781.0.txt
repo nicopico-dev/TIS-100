@@ -1,0 +1,56 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV 15 ACC
+LP1:
+ MOV 3 RIGHT
+ MOV 0 RIGHT
+ SUB 1
+ JGZ LP1
+ MOV 15 ACC
+ JMP LP2
+LP2:
+ MOV 0 RIGHT
+ MOV 3 RIGHT
+ SUB 1
+ JGZ LP2
+
+@9
+MOV 0 DOWN
+MOV ACC DOWN
+SWP
+MOV 30 ACC
+LOOP:
+ MOV LEFT DOWN
+ SUB 1
+ JEZ END
+ JMP LOOP
+END:
+ MOV -1 DOWN
+ SWP
+ ADD 1
+
+@10
+

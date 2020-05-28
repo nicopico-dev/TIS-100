@@ -1,0 +1,44 @@
+@0
+LOOP:
+ MOV UP ACC
+ JEZ GO
+ MOV ACC RIGHT
+ SWP
+ ADD 1
+ SWP
+ JMP LOOP
+GO:
+ SWP
+ MOV ACC DOWN
+ JRO 0
+
+@1
+MOV UP DOWN
+
+@2
+MOV UP ACC
+MOV ACC RIGHT
+!JRO -1
+
+@3
+S:
+ MOV LEFT ACC
+ SUB 1
+ JLZ S
+ MOV UP DOWN
+ JRO -3
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8
+

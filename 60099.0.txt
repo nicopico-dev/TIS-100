@@ -1,0 +1,35 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+S:
+MOV LEFT ACC
+JLZ DOWN_UP
+ MOV UP ACC
+ MOV ACC DOWN
+ MOV ACC LEFT
+ JMP S
+DOWN_UP:
+ MOV DOWN ACC
+ MOV ACC UP
+ MOV ACC LEFT
+
+@6
+
+
+@7
+
+
+@8

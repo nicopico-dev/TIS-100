@@ -1,0 +1,55 @@
+@0
+
+
+@1
+S:
+ MOV UP ACC
+ JNZ RESET
+ MOV 1 DOWN
+ JMP S
+RESET:
+ MOV 0 DOWN
+
+@2
+
+
+@3
+
+
+@4
+ SWP
+ MOV UP ACC
+ JEZ RESET
+ SWP
+ ADD 1
+ JMP SEND
+RESET:
+ SWP
+ MOV 0 ACC
+SEND:
+ MOV ACC RIGHT
+
+@5
+S:
+ MOV LEFT ACC
+ SUB 2
+ JGZ OK
+ MOV 0 DOWN
+ JMP S
+OK:
+ MOV 1 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+ MOV UP DOWN
+
+@10
+
